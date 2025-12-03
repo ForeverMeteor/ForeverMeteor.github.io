@@ -1,17 +1,18 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![ForeverMeteor](https://img.shields.io/badge/ForeverMeteor-github-blue?logo=github)](https://github.com/ForeverMeteor)
 
-He is currently a Fellow in the Department of Earth and Planetary Sciences (EPS) at Harvard University.
+I am currently a Master's student at the School of Informatics, Xiamen University, advised by Prof. Zhihong Zhang. Meanwhile, I am participating in the internship at State Grid.
 
 #### Contact
 
-Email: senli[at]fas.harvard.edu
+Email: \
+zhangchentao@stu.xmu.edu.cn\
+zhangchentao.xm@foxmail.com
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+M.E., School of Informatics, Xiamen University, 2024—2027.\
+B.E., School of Informatics, Xiamen University, 2020—2024.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
-
+Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), and Domain Question Answering (Domain QA).
