@@ -8,7 +8,8 @@ Meanwhile, I am participating in the internship at State Grid.
 
 #### Contact
 zhangchentao@stu.xmu.edu.cn\
-zhangchentao.xm@foxmail.com
+zhangchentao.xm@foxmail.com\
+chentaozhang557x@gmail.com
 
 #### Education
 M.E., School of Informatics, Xiamen University, 2024—2027.\
