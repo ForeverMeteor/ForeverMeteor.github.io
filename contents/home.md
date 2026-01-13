@@ -17,4 +17,3 @@ B.E., School of Informatics, Xiamen University, 2020—2024.
 
 #### Research Interests
 Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), and Domain Question Answering (Domain QA).
-
