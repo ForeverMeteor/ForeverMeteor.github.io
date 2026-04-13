@@ -1,9 +1,53 @@
 @charset "UTF-8";
+
+/* 引入自定义字体 - 霞鹭文楷 */
+@font-face {
+  font-family: 'Fangzheng Kaiti';
+  src: url('../fonts/fangzhengkaiti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*!
 * Start Bootstrap - New Age v6.0.7 (https://startbootstrap.com/theme/new-age)
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
 */
+
+/* Prevent color change on hover for page-top-title */
+span#page-top-title.navbar-brand.fw-bold {
+  pointer-events: none !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: none !important;
+  user-select: none !important;
+  outline: none !important;
+}
+
+/* Ensure no hover effect */
+span#page-top-title.navbar-brand.fw-bold:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+  background-color: transparent !important;
+  pointer-events: none !important;
+}
+
+/* Prevent outline for all elements */
+* {
+  outline: none !important;
+}
+
+/* Footer link styles */
+a.text-white-50, a.text-white-600 {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.text-white-50:hover, a.text-white-600:hover {
+  color: white !important;
+}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -54,10 +98,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, "Fangzheng Kaiti", "楷体", "KaiTi", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, "Fangzheng Kaiti", "楷体", "KaiTi", sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.5;

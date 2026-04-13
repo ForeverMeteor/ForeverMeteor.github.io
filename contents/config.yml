@@ -1,5 +1,33 @@
-title: Chentao Zhang's Homepage
-page-top-title: Chentao Zhang
-top-section-bg-text: ""
-home-subtitle: Chentao Zhang &ensp;|&ensp;张辰涛
-copyright-text: '&copy; Chentao Zhang 2025-2027. All Rights Reserved.'
+# Language configuration
+default_language: en
+languages:
+  en:
+    title: Chentao Zhang's Homepage
+    top-section-bg-text: ""
+    home-subtitle: Chentao Zhang &ensp;|&ensp;张辰涛
+    copyright-text: '&copy; Chentao Zhang 2025-2027. All Rights Reserved.'
+    template-text: 'Based on template by <a href="https://github.com/senli1073" class="text-white-600 hover:text-white transition-colors">senli1073</a>'
+    license-text: 'License'
+    nav-home: HOME
+    nav-publications: PUBLICATIONS
+    nav-awards: AWARDS
+  zh:
+    title: 张辰涛 个人主页
+    top-section-bg-text: ""
+    home-subtitle: 张辰涛
+    copyright-text: '&copy; 张辰涛 2025-2027. 保留所有权利.'
+    template-text: '基于 <a href="https://github.com/senli1073" class="text-white-600 hover:text-white transition-colors">senli1073</a> 的模板'
+    license-text: '许可证'
+    nav-home: 首页
+    nav-publications: 发表论文
+    nav-awards: 获奖情况
+  jp:
+    title: 張辰涛のホームページ
+    top-section-bg-text: ""
+    home-subtitle: 張辰涛
+    copyright-text: '&copy; 張辰涛 2025-2027. 全著作権所有.'
+    template-text: '<a href="https://github.com/senli1073" class="text-white-600 hover:text-white transition-colors">senli1073</a> のテンプレートに基づく'
+    license-text: 'ライセンス'
+    nav-home: ホーム
+    nav-publications: 論文
+    nav-awards: 受賞

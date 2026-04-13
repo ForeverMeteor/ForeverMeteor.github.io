@@ -81,7 +81,7 @@
     <!-- Navigation-->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
+            <span id="page-top-title" class="navbar-brand fw-bold" style="pointer-events: none; cursor: default; color: inherit !important; text-decoration: none !important; transition: none !important;"></span>
             <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +99,16 @@
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
                     </li>
-
+                    <li class="nav-item dropdown ms-5">
+                        <a class="nav-link dropdown-toggle text-sm" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item lang-switch" href="#" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item lang-switch" href="#" data-lang="zh">中文</a></li>
+                            <li><a class="dropdown-item lang-switch" href="#" data-lang="jp">日本語</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -124,7 +133,7 @@
     <!-- Photo -->
     
     <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home" style="padding-top: 75px; padding-bottom: 45px;">
         <div class="container px-5">
             <header>
                 <h2 id="home-subtitle"> </h2>
@@ -136,7 +145,7 @@
     <!-- Home -->
 
     <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications" style="padding-top: 45px; padding-bottom: 45px;">
         <div class="container px-5">
             <header>
                 <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
@@ -148,7 +157,7 @@
     <!-- Publications  -->
 
     <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards" style="padding-top: 45px; padding-bottom: 70px;">
         <div class="container px-5">
             <header>
                 <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
@@ -165,9 +174,12 @@
         <div class="container px-5">
             <div class="text-white-50 small">
                 <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+                <div class="mb-2">
+                    <a id="github-link" href="https://github.com/ForeverMeteor" class="text-white-50 hover:text-white transition-colors">Github</a>
+                    <span class="mx-1">&middot;</span>
+                    <a id="license-link" href="https://github.com/ForeverMeteor/ForeverMeteor.github.io/blob/main/LICENSE" class="text-white-50 hover:text-white transition-colors">License</a>
+                </div>
+                <div id="template-text" class="text-white-600 text-xs"></div>
             </div>
         </div>
     </footer>
