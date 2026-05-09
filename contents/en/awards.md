@@ -1,4 +1,3 @@
-
 - Merit Graduate Student of School of Informatics, Xiamen University, 2025.
 - Merit Undergraduate Student of School of Informatics, Xiamen University, 2024.
 - "Xinghao Scholarship(星皓奖学金)" for Undergraduate Students of School of Informatics, Xiamen University，2024.
