@@ -1,6 +1,6 @@
 #### 已发表论文
 
-- Q. Liu, C. Zheng, Y. Hu, Z. Chen, <strong>C. Zhang</strong>, Q. Zhang, and Z. Zhang*. From Retrieval to Translation: Translating Query into Graph-level Clues for Retrieval-Augmented Generation. <strong>Proceedings of the 43rd International Conference on Machine Learning (ICML2026, CCF-A)</strong>. [[Paper]]() [[Code]](https://github.com/GenIRAG/KG-Translator)
+- Q. Liu†, Q. Zhang†, Y. Hu, C. Zheng, Z. Chen, <strong>C. Zhang</strong>, and Z. Zhang*. From Retrieval to Translation: Translating Query into Graph-level Clues for Retrieval-Augmented Generation. <strong>Proceedings of the 43rd International Conference on Machine Learning (ICML2026, CCF-A)</strong>. [[Paper]]() [[Code]](https://github.com/GenIRAG/KG-Translator)
 
 - Q. Liu, <strong>C. Zhang</strong>, Y. Hu, C. Zheng, Q. Zhang, and Z. Zhang*. Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search. <strong>Proceedings of the ACM Web Conference 2026 (WWW2026, CCF-A)</strong>. [[Paper]](https://dl.acm.org/doi/10.1145/3774904.3792544) [[Code]](https://github.com/GenIRAG/LogiCGR)
 

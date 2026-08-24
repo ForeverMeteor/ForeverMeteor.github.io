@@ -1,0 +1,3 @@
+- 2026.6-2026.9,Intelligence Technology(Lazada)-Digital Retail Technology Department-Alibaba International Digital Commerce Group,AI Application Algorithm Engineer Intern
+- 2025.9-2026.6,Platform Center-State Grid Chongqing Electric Power Company Information and Communication Branch,University-Enterprise Co-Op Intern 
+- 2024.6-2024.8,Central Software Institute-2012 Laboratories-Hangzhou Research Institute%%COMMA%% Huawei,Cangjie Developer Intern

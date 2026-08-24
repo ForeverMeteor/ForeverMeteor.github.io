@@ -11,6 +11,7 @@ languages:
     nav-home: HOME
     nav-publications: PUBLICATIONS
     nav-awards: AWARDS
+    nav-internship: INTERNSHIP
   zh:
     title: 张辰涛 个人主页
     top-section-bg-text: ""
@@ -21,6 +22,7 @@ languages:
     nav-home: 首页
     nav-publications: 发表论文
     nav-awards: 获奖情况
+    nav-internship: 实习经历
   jp:
     title: 張辰涛のホームページ
     top-section-bg-text: ""
@@ -31,3 +33,4 @@ languages:
     nav-home: ホーム
     nav-publications: 論文
     nav-awards: 受賞
+    nav-internship: インターンシップ

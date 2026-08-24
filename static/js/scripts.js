@@ -2,7 +2,7 @@
 
 const content_dir = 'contents/'
 const config_file = 'config.yml'
-const section_names = ['home', 'publications', 'awards']
+const section_names = ['home', 'publications', 'awards', 'internship']
 let currentLanguage = 'en'
 let configData = null
 
@@ -65,6 +65,10 @@ function loadLanguage(lang) {
             if (awardsLink) {
                 awardsLink.innerHTML = 'AWARDS';
             }
+            const internshipLink = document.querySelector('#navbarResponsive a[href="#internship"]');
+            if (internshipLink) {
+                internshipLink.innerHTML = 'INTERNSHIP';
+            }
         } catch (error) {
             console.error('Error updating UI elements:', error);
         }
@@ -72,6 +76,36 @@ function loadLanguage(lang) {
     
     // Load language-specific markdown files
     loadMarkdownFiles(lang)
+}
+
+function processInternshipLayout(lang) {
+    const container = document.getElementById('internship-md');
+    if (!container) return;
+    const items = container.querySelectorAll('li');
+    items.forEach((li, idx) => {
+        const text = li.textContent.trim().replace(/,+$/, '').replace(/%%COMMA%%/g, '\u0000');
+        const parts = text.split(',').map(p => p.trim().replace(/\u0000/g, ',')).filter(p => p.length > 0);
+        if (parts.length >= 3) {
+            const date = parts[0];
+            let company = parts[1];
+            const right = parts.slice(2).join(',');
+            if (/^[a-zA-Z0-9\s\-(),]+$/.test(company) && /[a-zA-Z]/.test(company)) {
+                const segments = company.split('-').map(p => p.trim()).filter(p => p.length > 0);
+                segments[segments.length - 1] = '<strong>' + segments[segments.length - 1] + '</strong>';
+                company = segments.join(',<br>');
+            } else {
+                const firstSep = company.search(/[-・]/);
+                if (firstSep > 0) {
+                    company = '<strong>' + company.substring(0, firstSep) + '</strong>' + company.substring(firstSep);
+                }
+            }
+            li.classList.add('internship-item');
+            if (lang === 'jp' && idx === 0) {
+                li.classList.add('internship-wrap');
+            }
+            li.innerHTML = '<span class="internship-date">' + date + '</span><span class="internship-company">' + company + '</span><span class="internship-content">' + right + '</span>';
+        }
+    });
 }
 
 function loadMarkdownFiles(lang) {
@@ -92,6 +126,9 @@ function loadMarkdownFiles(lang) {
                 const element = document.getElementById(name + '-md');
                 if (element) {
                     element.innerHTML = html;
+                    if (name === 'internship') {
+                        processInternshipLayout(lang);
+                    }
                 }
             })
             .then(() => {
@@ -117,6 +154,9 @@ function loadMarkdownFiles(lang) {
                             const element = document.getElementById(name + '-md');
                             if (element) {
                                 element.innerHTML = html;
+                                if (name === 'internship') {
+                                    processInternshipLayout('en');
+                                }
                             }
                         });
                 }
@@ -174,6 +214,17 @@ window.addEventListener('DOMContentLoaded', event => {
                 const awardsSubtitle = document.getElementById('awards-subtitle');
                 if (awardsSubtitle) {
                     awardsSubtitle.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+            // Handle INTERNSHIP link click to scroll to internship-subtitle
+            else if (responsiveNavItem.getAttribute('href') === '#internship') {
+                e.preventDefault();
+                const internshipSubtitle = document.getElementById('internship-subtitle');
+                if (internshipSubtitle) {
+                    internshipSubtitle.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });

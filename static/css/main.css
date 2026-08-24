@@ -54,6 +54,10 @@ section .main-body{
     line-height: 2.4rem;
 }
 
+section .main-body strong {
+    font-weight: 700;
+}
+
 
 .bg-gradient-primary-to-secondary-light {
     background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
@@ -61,6 +65,52 @@ section .main-body{
 
 .bg-gradient-primary-to-secondary-gray {
     background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
+}
+
+#internship-md ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#internship-md li {
+    margin-bottom: 0.5rem;
+}
+
+#internship-md .internship-date {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+#internship-md .internship-company {
+    flex: 1 1 auto;
+    white-space: normal;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+#internship-md .internship-content {
+    flex: 0 0 auto;
+    text-align: right;
+    white-space: nowrap;
+}
+
+#internship-md li.internship-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+#internship-md li.internship-wrap {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#internship-md li.internship-wrap .internship-content {
+    flex-basis: 100%;
+    margin-top: 0.25rem;
 }
 
 
